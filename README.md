@@ -1,6 +1,6 @@
 # AI Test Lab
 
-AI駆動開発の実践ガイドに基づく、**テスト自動化検証用アプリケーション**です。  
+[AI駆動開発の実践ガイド](https://github.com/takuma39/ai)に基づく、**テスト自動化検証用アプリケーション**です。  
 AI（Claude Code）を活用したテスト駆動開発（AI-TDD）のベストプラクティスを実証するためのテストベッドとして構築しています。
 
 ## 技術スタック
@@ -37,7 +37,6 @@ ai-test/
 ├── tests/e2e/                        # E2Eテスト（未作成）
 ├── .mcp.json                         # MCP サーバー設定（fetch / Playwright）
 ├── CLAUDE.md                         # AI開発エージェントの行動規範
-├── AI駆動開発.md                      # AI駆動開発 実践ガイド（参照資料）
 └── README.md                         # 本ファイル
 ```
 
@@ -160,12 +159,12 @@ npx playwright test
 
 ## 関連ドキュメント
 
-| ドキュメント | パス | 説明 |
+| ドキュメント | パス / URL | 説明 |
 |---|---|---|
 | 仕様書 | `docs/spec/SPEC.md` | BDD形式の機能要件・テスト基準 |
 | UIモックプロンプト | `docs/design/UI_MOCK_PROMPT.md` | AIデザインツール向けプロンプト |
 | テストガイドライン | `.claude/skills/test-guidelines.md` | AI-TDD・AAAパターン規約 |
-| AI駆動開発ガイド | `AI駆動開発.md` | 開発プロセス全体の実践ガイド |
+| AI駆動開発ガイド | [github.com/takuma39/ai](https://github.com/takuma39/ai) | 開発プロセス全体の実践ガイド（外部リポジトリ） |
 
 ## ライセンス
 
