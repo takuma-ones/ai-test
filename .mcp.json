@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-fetch"],
+      "metadata": {
+        "description": "任意のURLからドキュメントを取得しMarkdownに変換。公式ドキュメント参照用。APIキー不要",
+        "usage": "Next.js / Playwright / Vitest / Prisma / shadcn/ui 等の公式ドキュメントをオンデマンドで取得"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"],
+      "metadata": {
+        "description": "Playwright公式MCPサーバー。ブラウザ自動操作・E2Eテスト実行。APIキー不要",
+        "usage": "E2Eテストシナリオの自動生成・実行、スクリーンショット差分検出"
+      }
+    }
+  }
+}
