@@ -1,8 +1,20 @@
 {
   "mcpServers": {
+    "apidog": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "apidog-mcp-server@latest",
+        "--project-id=1266976"
+      ],
+      "metadata": {
+        "description": "Apidog MCP サーバー（クラウド連携）。API仕様の管理・テスト実行。APIDOG_ACCESS_TOKEN を .env に設定すること",
+        "usage": "API仕様書の参照、テストの実行、エンドポイントの検索"
+      }
+    },
     "fetch": {
       "command": "npx",
-      "args": ["-y", "mcp-server-fetch"],
+      "args": ["-y", "mcp-fetch-server"],
       "metadata": {
         "description": "任意のURLからドキュメントを取得しMarkdownに変換。公式ドキュメント参照用。APIキー不要",
         "usage": "Next.js / Playwright / Vitest / Prisma / shadcn/ui 等の公式ドキュメントをオンデマンドで取得"
