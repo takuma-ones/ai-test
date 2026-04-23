@@ -27,6 +27,14 @@
         "description": "Playwright公式MCPサーバー。ブラウザ自動操作・E2Eテスト実行。APIキー不要",
         "usage": "E2Eテストシナリオの自動生成・実行、スクリーンショット差分検出"
       }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "${DATABASE_URL}"],
+      "metadata": {
+        "description": "PostgreSQL MCPサーバー。ローカルDBへの直接クエリ実行。DATABASE_URL 環境変数を設定すること",
+        "usage": "DBスキーマの確認、データの参照・検証、マイグレーション状況の確認"
+      }
     }
   }
 }
