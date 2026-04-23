@@ -64,19 +64,12 @@ erDiagram
         String id PK "cuid()"
         String name "ユーザー名"
         String email UK "メールアドレス"
-        String password "ハッシュ化パスワード (nullable: OAuth用)"
+        String password "ハッシュ化パスワード (bcryptハッシュ)"
         Role role "ADMIN | USER"
         DateTime createdAt "作成日時"
         DateTime updatedAt "更新日時"
     }
 
-    Account {
-        String id PK "cuid()"
-        String userId FK "User.id"
-        String type "oauth | credentials"
-        String provider "github | google"
-        String providerAccountId "プロバイダ側ID"
-    }
 
     Session {
         String id PK "cuid()"
@@ -93,7 +86,6 @@ erDiagram
         DateTime submittedAt "送信日時"
     }
 
-    User ||--o{ Account : "has"
     User ||--o{ Session : "has"
     User ||--o{ FormSubmission : "submits"
 ```
@@ -132,7 +124,7 @@ stateDiagram-v2
 
 | # | 画面名 | パス | アクセス権 | 概要 |
 |---|---|---|---|---|
-| 1 | ログイン | `/login` | 全員 | メール/パスワード + OAuthログイン |
+| 1 | ログイン | `/login` | 全員 | メール/パスワードログイン |
 | 2 | 検証用フォーム | `/forms` | 認証済み | shadcn/ui各種フォーム要素の検証 |
 | 3 | 管理者ダッシュボード | `/admin` | Admin | KPIカード + ユーザー一覧テーブル |
 | 4 | ユーザープロファイル | `/user` | User | プロファイル表示 |

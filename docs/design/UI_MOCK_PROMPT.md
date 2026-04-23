@@ -35,9 +35,6 @@ UIモック（全3画面）を作成してください。
   - パスワード（Input type=password）
 - ボタン:
   - 「ログイン」（Primary、フル幅）
-  - 「Sign in with GitHub」（アイコン付き Outline ボタン）
-  - 「Sign in with Google」（アイコン付き Outline ボタン）
-- 区切り: OAuthボタンとの間に「または」のセパレーター
 - 状態表現:
   - 通常状態: デフォルトのshadcn/uiスタイル
   - エラー状態: border-destructive（赤枠）+ フィールド下部にエラーテキスト（例: 「メールアドレスの形式が正しくありません」）
